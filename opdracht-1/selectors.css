@@ -22,17 +22,28 @@
 
 /* 1.4 Haal de text-decoration van navigatie-links weg, geef onbezochte links de kleur hsl(359, 79%, 56%) en verander de kleur wanneer de gebruiker er overheen hovert. */
 #Links li>a {
-    color:hsl(359, 79%, 56%);
-    color: hsl( 300,77%,56%);}
+    color: hsl(359, 79%, 56%);
+    text-decoration: none;}
 
+#Links li>a:hover{
+color: green;
+}
 
 /* 1.5 Maak een hover- en visited stijl voor alle links in 'main'. */
+a:link {
+    color: red;
+}
+
+a:visited {
+    color:green;
+}
 a:hover {
     color: blue;
 }
 
-
-
+a:active {
+    color: pink;
+}
 
 /* Verander de achtergrond van de SignUp button. Tip: https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors  */
 .button {
@@ -41,9 +52,18 @@ a:hover {
 
 
 /* Geef het tekst-veld een blauwe rand wanneer hij in focus is */
+.tekst:focus {
+    background: blue;
+}
 
 
 
 /* Target alle heading tags op de pagina en zet hun font-family op 'Bree Serif', serif */
-
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Bree Serif,Serif;
+}
